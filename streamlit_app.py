@@ -29,6 +29,12 @@ ingredients_list = st.multiselect(
 )
 
 
+#new section
+import requests
+smoothie_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text (smoothie_response)
+
+
 if ingredients_list:
     # st.write(ingredients_list)
     # st.text(ingredients_list)
